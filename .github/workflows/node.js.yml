@@ -27,4 +27,10 @@ jobs:
         with:
           node-version: 12
           regestry-url: https://npm.pkg.github.com/
+      - name: my fourth action
+        uses: actions/first-interaction@v1
+        with: 
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue: "Message that will display on users first issue"
+          pr-message: "Message that will display on users first PR""
         
