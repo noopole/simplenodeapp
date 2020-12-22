@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [12, 14]
+        node: [12]
     steps:
       - name: my first step
         env:
@@ -19,3 +19,6 @@ jobs:
           FIRST_NAME: Bruno
           LAST_NAME: Gachie
         run: echo $MY_VAR $FIRST_NAME $LAST_NAME
+      - name: my second job
+        if: success()
+        run: echo "La première étape a été exécutée avec succès"
