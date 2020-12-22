@@ -22,3 +22,9 @@ jobs:
       - name: my second job
         if: success()
         run: echo "La première étape a été exécutée avec succès"
+      - name: my third step
+        uses: actions/checkout@v1
+        with:
+          node-version: 12
+          regestry-url: https://npm.pkg.github.com/
+        
