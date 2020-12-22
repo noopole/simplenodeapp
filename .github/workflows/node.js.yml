@@ -32,5 +32,5 @@ jobs:
         with: 
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue: "Message that will display on users first issue"
-          pr-message: "Message that will display on users first PR""
+          pr-message: "Message that will display on users first PR"
         
